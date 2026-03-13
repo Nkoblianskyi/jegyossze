@@ -24,7 +24,7 @@ export interface Event {
 
 export const partners = [
   { name: 'Jegy.hu', url: 'https://jegy.hu', description: 'Magyarország legnagyobb jegyértékesítő platformja.' },
-  { name: 'Eventim HU', url: 'https://eventim.hu', description: 'Európa egyik vezető jegyértékesítő hálózata.' },
+  { name: 'Eventim HU', url: 'https://www.eventim.hu', description: 'Európa egyik vezető jegyértékesítő hálózata.' },
   { name: 'StubHub', url: 'https://stubhub.com', description: 'Globális másodlagos jegypiac, biztonságos vásárlással.' },
   { name: 'Viagogo', url: 'https://viagogo.com', description: 'Nemzetközi jegyviszonteladó platform.' },
   { name: 'Tixa', url: 'https://tixa.hu', description: 'Magyar jegyrendszer rendezvényekhez és koncertekhez.' },
@@ -46,7 +46,7 @@ export const events: Event[] = [
     featured: true,
     offers: [
       { partner: 'Jegy.hu', price: 18500, url: 'https://jegy.hu', available: true },
-      { partner: 'Eventim HU', price: 19500, url: 'https://eventim.hu', available: false },
+      { partner: 'Eventim HU', price: 19500, url: 'https://www.eventim.hu', available: false },
       { partner: 'StubHub', price: 22000, url: 'https://stubhub.com', available: true },
     ],
   },
@@ -98,7 +98,7 @@ export const events: Event[] = [
     featured: true,
     offers: [
       { partner: 'Jegy.hu', price: 89000, url: 'https://jegy.hu', available: true },
-      { partner: 'Eventim HU', price: 91000, url: 'https://eventim.hu', available: true },
+      { partner: 'Eventim HU', price: 91000, url: 'https://www.eventim.hu', available: true },
       { partner: 'Viagogo', price: 98000, url: 'https://viagogo.com', available: true },
       { partner: 'StubHub', price: 105000, url: 'https://stubhub.com', available: true },
     ],
@@ -148,7 +148,7 @@ export const events: Event[] = [
     description: 'A Coldplay látványos, fenntartható koncerttúrájával érkezik Budapestre. Egyedülálló fény- és lézeres show.',
     offers: [
       { partner: 'Jegy.hu', price: 24500, url: 'https://jegy.hu', available: true },
-      { partner: 'Eventim HU', price: 25000, url: 'https://eventim.hu', available: true },
+      { partner: 'Eventim HU', price: 25000, url: 'https://www.eventim.hu', available: true },
       { partner: 'StubHub', price: 32000, url: 'https://stubhub.com', available: true },
       { partner: 'Viagogo', price: 35000, url: 'https://viagogo.com', available: true },
     ],
@@ -198,7 +198,7 @@ export const events: Event[] = [
     description: 'A VOLT Fesztivál visszatér Sopronba! Négy napon át hazai és külföldi zenészek a legjobb fesztiválatmoszférában.',
     offers: [
       { partner: 'Jegy.hu', price: 45000, url: 'https://jegy.hu', available: true },
-      { partner: 'Eventim HU', price: 46500, url: 'https://eventim.hu', available: true },
+      { partner: 'Eventim HU', price: 46500, url: 'https://www.eventim.hu', available: true },
     ],
   },
   {
@@ -213,7 +213,7 @@ export const events: Event[] = [
     image: '/images/rammstein.jpg',
     description: 'A Rammstein lenyűgöző pirotechnikai show-val tér vissza Budapestre. Fenomenális látvány és erőteljes zene.',
     offers: [
-      { partner: 'Eventim HU', price: 28000, url: 'https://eventim.hu', available: true },
+      { partner: 'Eventim HU', price: 28000, url: 'https://www.eventim.hu', available: true },
       { partner: 'StubHub', price: 35000, url: 'https://stubhub.com', available: true },
       { partner: 'Viagogo', price: 38000, url: 'https://viagogo.com', available: true },
     ],

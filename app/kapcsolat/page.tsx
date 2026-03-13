@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react'
 
-const OFFICE_ADDRESS = '1134 Budapest, Váci út 45., Irodaközpont'
+const OFFICE_ADDRESS = 'Debrecen, Csapó utca 40., Magyarország'
 const EMAIL = 'info@jegyossze.com'
 
 export default function KapcsolatPage() {
@@ -56,7 +56,7 @@ export default function KapcsolatPage() {
                     <MapPin className="w-5 h-5 text-amber-600" aria-hidden="true" />
                   </div>
                   <div>
-                    <p className="text-xs text-slate-500 mb-1">Irodaközpont (Magyarország)</p>
+                    <p className="text-xs text-slate-500 mb-1">Cím</p>
                     <p className="text-sm font-semibold text-slate-900">{OFFICE_ADDRESS}</p>
                   </div>
                 </div>

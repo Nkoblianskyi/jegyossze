@@ -13,7 +13,7 @@ const navLinks = [
   { href: '/kapcsolat', label: 'Kapcsolat' },
 ]
 
-const OFFICE_ADDRESS = '1134 Budapest, Váci út 45., Irodaközpont'
+const OFFICE_ADDRESS = 'Debrecen, Csapó utca 40., Magyarország'
 
 export function Header() {
   const pathname = usePathname()

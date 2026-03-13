@@ -11,7 +11,7 @@ const partnerNames = [
   'Jegymester',
 ]
 
-const OFFICE_ADDRESS = '1134 Budapest, Váci út 45., Irodaközpont'
+const OFFICE_ADDRESS = 'Debrecen, Csapó utca 40., Magyarország'
 const EMAIL = 'info@jegyossze.com'
 
 export function Footer() {

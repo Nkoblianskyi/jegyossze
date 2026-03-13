@@ -2,10 +2,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Search, Shield, TrendingDown, Users, Info, ChevronRight, Ticket } from 'lucide-react'
 import { events } from '@/lib/events-data'
-import { EventCard } from '@/components/event-card'
+import { EventCardPreview } from '@/components/event-card-preview'
 import { PartnersSection } from '@/components/partners-section'
+import { ContactFormSection } from '@/components/contact-form-section'
 
-const featuredEvents = events.filter((e) => e.featured)
+const homePreviewEvents = events.slice(0, 8)
 
 const faqItems = [
   {
@@ -47,7 +48,7 @@ export default function HomePage() {
         </div>
 
         <div className="relative flex-1 flex flex-col max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-8 md:pt-10">
-          {/* Disclaimer – unchanged position */}
+          {/* Hero disclaimer – kötelező */}
           <div
             className="max-w-2xl w-full mb-8 md:mb-10 bg-slate-800/90 backdrop-blur-sm border border-amber-500/30 rounded-2xl p-5 text-left"
             role="note"
@@ -144,15 +145,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured events – new section layout and heading */}
-      <section className="py-16 md:py-20 bg-white" aria-labelledby="featured-title">
+      {/* Event preview – 8 cards, new design */}
+      <section className="py-16 md:py-20 bg-white" aria-labelledby="events-preview-title">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
             <div>
-              <h2 id="featured-title" className="text-2xl md:text-3xl font-bold text-slate-900">
-                Kiemelt események
+              <h2 id="events-preview-title" className="text-2xl md:text-3xl font-bold text-slate-900">
+                Események
               </h2>
-              <p className="text-slate-600 mt-1">A legnépszerűbb rendezvények és a legjobb ajánlatok</p>
+              <p className="text-slate-600 mt-1">Böngészd és hasonlítsd össze a jegyárakat</p>
             </div>
             <Link
               href="/esemenyek"
@@ -162,9 +163,9 @@ export default function HomePage() {
               <ChevronRight className="w-4 h-4" aria-hidden="true" />
             </Link>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {featuredEvents.map((event, index) => (
-              <EventCard key={event.id} event={event} priority={index < 2} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {homePreviewEvents.map((event, index) => (
+              <EventCardPreview key={event.id} event={event} priority={index < 4} />
             ))}
           </div>
           <div className="mt-8 sm:hidden text-center">
@@ -274,6 +275,8 @@ export default function HomePage() {
       </section>
 
       <PartnersSection />
+
+      <ContactFormSection />
 
       {/* FAQ – new layout: cards with expand */}
       <section className="py-16 md:py-20 bg-white" aria-labelledby="faq-title">
