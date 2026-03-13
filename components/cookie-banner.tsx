@@ -36,9 +36,6 @@ export function CookieBanner() {
       <div className="max-w-2xl mx-auto rounded-2xl shadow-2xl border border-slate-200 bg-white overflow-hidden">
         <div className="flex flex-col sm:flex-row sm:items-center gap-4 p-5 md:p-6">
           <div className="flex items-start gap-4 flex-1 min-w-0">
-            <div className="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center shrink-0">
-              <Cookie className="w-6 h-6 text-amber-600" aria-hidden="true" />
-            </div>
             <div className="min-w-0">
               <p className="text-slate-900 font-bold text-base mb-1">Sütiket használunk</p>
               <p className="text-slate-600 text-sm leading-relaxed">
